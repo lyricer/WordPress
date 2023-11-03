@@ -17,7 +17,7 @@ function calculateTime() {
     
     var secondsDifference = Math.floor(remainingTime / 1000);
     
-    span_dt_dt.innerHTML = daysDifference + "天" + hoursDifference + "小时" + minutesDifference + "分" + secondsDifference + "秒";
+    span_dt_dt.innerHTML = daysDifference + "天" + hoursDifference + "小時" + minutesDifference + "分" + secondsDifference + "秒";
 }
 
 calculateTime();
