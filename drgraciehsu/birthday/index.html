@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height:100vh;width:100vw;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>生日快樂</title>
+    <link rel="icon" href="./drgraciehsu.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="height:100vh;width:100vw;">
+    <!-- 頭像 -->
+    <div class="cs">
+        <img src="./drgraciehsu.jpg" id="logo">
+    </div>
+    <canvas class="canvas" width="1820" height="905"></canvas>
+    <!-- 出生倒計時 -->
+    <p class="text">
+        女神博士來到這個世界已經 <br />
+        <span id="span_dt_dt"></span>
+    </p>
+</body>
+<!--  設定出生日期 -->
+<script type="text/javascript" src="time.js"></script>
+<!-- canvas動畫 -->
+<script type="text/javascript" src="index.js"></script>
+<!-- 背景音樂 -->
+<video controls id="music" muted="muted" src="./happybirthday.mp3" loop="loop"  autoplay preload="auto" ></video>
+<script type="text/javascript">
+ window.onload  = () =>{
+        document.querySelector("#music").play();
+        document.querySelector("#music").muted = false;
+}
+</script>
+<!-- copyright -->
+<footer style="color: #BBE1FA; text-align:center;">
+    <font size="2" color=#BBE1FA>©<script type="text/javascript">document.write((new Date()).getFullYear());</script> 生日快樂</font>
+</footer>
+
+</html>

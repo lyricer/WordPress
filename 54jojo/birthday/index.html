@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100vh;width:100vw;">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body style="height:100vh;width:100vw;">
     <!-- 頭像 -->
     <div class="cs">
         <img src="./54jojo-1-e1692069300143-1.jpg" id="logo">
@@ -26,7 +26,13 @@
 <!-- canvas動畫 -->
 <script type="text/javascript" src="index.js"></script>
 <!-- 背景音樂 -->
-<audio id="music" src="./happybirthday.mp3" autoplay preload="auto" loop="loop">该浏览器不支持audio属性</audio>
+<video controls id="music" muted="muted" src="./happybirthday.mp3" loop="loop"  autoplay preload="auto" ></video>
+<script type="text/javascript">
+ window.onload  = () =>{
+        document.querySelector("#music").play();
+        document.querySelector("#music").muted = false;
+}
+</script>
 <!-- copyright -->
 <footer style="color: #BBE1FA; text-align:center;">
     <font size="2" color=#BBE1FA>©2023 生日快樂&nbspJoJo</font>
